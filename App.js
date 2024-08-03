@@ -1,21 +1,13 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import Item from './components/item/Item';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <View
-        style={{
-          borderWidth: 5,
-          borderTopWidth: 20,
-          borderBottomWidth: 30,
-          borderColor: '#d00f0f',
-          borderRadius: 10,
-          borderTopLeftRadius: 20,
-          borderBottomLeftRadius: 30,
-        }}>
-        <Text>진짜 div가 없네123..</Text>
-      </View>
+      <Item name={'Table'} price={20} />
+      <Item name={'Chair'} price={2000} />
+      <Item name={'Desk'} price={200} />
     </SafeAreaView>
   );
 };
